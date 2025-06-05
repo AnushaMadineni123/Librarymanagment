@@ -1,4 +1,4 @@
--name:Run tests and create report
+
 runs-on:ununtu-latest
 needs:test #depends on the test job
 steps:
