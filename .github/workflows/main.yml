@@ -1,0 +1,13 @@
+jobs:
+  download-report:
+    runs-on: ubuntu-latest
+    needs: test # depends on the test job
+    steps:
+      - name: Download test report
+	uses: actions/download-artifact@v4
+	with:
+	  name: test-report
+	  path: downloaded-reports
+
+      - name: Display contents
+	run: cat downloaded-reports/test-results.txt
