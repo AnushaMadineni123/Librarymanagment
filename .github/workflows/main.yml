@@ -1,4 +1,3 @@
-
 jobs:
   download-report:
     runs-on: ubuntu-latest
